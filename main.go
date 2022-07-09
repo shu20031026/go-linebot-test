@@ -36,6 +36,12 @@ func main() {
 	router := gin.New()
 	router.Use(gin.Logger())
 
+	router.GET("/", func(ctx *gin.Context) {
+		ctx.JSON(200, gin.H{
+			"message": "Hello World",
+		})
+	})
+
 	router.POST("/callback", func(ctx *gin.Context) {
 		events, err := bot.ParseRequest(ctx.Request)
 		if err != nil {
