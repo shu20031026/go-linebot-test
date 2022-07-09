@@ -81,7 +81,7 @@ func main() {
 						//------------------ここでDBに欠席と送信----------------------
 						bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(absenceResponse)).Do()
 					}
-					// 上記意外は、おうむ返しで返信
+					// 上記以外は、おうむ返しで返信
 					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(replyMessage)).Do()
 					if err != nil {
 						log.Print(err)
