@@ -26,6 +26,7 @@ require (
 require (
 	github.com/gin-gonic/gin v1.8.1
 	github.com/labstack/gommon v0.3.1 // indirect
+	github.com/line/line-bot-sdk-go v7.8.0+incompatible
 	github.com/line/line-bot-sdk-go/v7 v7.16.0
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
